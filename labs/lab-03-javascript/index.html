@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Workshop Registration System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Student Workshop Registration System</h1>
+    <p class="subtitle">CSE472 &mdash; Web and Internet Programming Lab</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Workshop information section -->
+    <section class="workshop-info">
+      <h2>Workshop Details</h2>
+      <p><strong>Workshop Name:</strong> Web Development Basics</p>
+      <p><strong>Date:</strong> 15 September 2026</p>
+      <p><strong>Venue:</strong> CSE Lab 4, Southeast University</p>
+      <p><strong>Capacity:</strong> 30 seats</p>
+    </section>
+
+    <!-- Interaction 1: Registration status -->
+    <section class="interaction-box">
+      <h2>Registration Status</h2>
+      <button type="button" onclick="checkRegistration()">
+        Check Registration Status
+      </button>
+      <p id="registrationStatus">Click the button to check the status.</p>
+    </section>
+
+    <!-- Interaction 2: Seat availability -->
+    <section class="interaction-box">
+      <h2>Seat Availability</h2>
+      <button type="button" onclick="checkSeats()">
+        Check Seat Availability
+      </button>
+      <p id="seatMessage">Seat information will appear here.</p>
+    </section>
+
+    <!-- Registration form -->
+    <section class="registration-form">
+      <h2>Register for the Workshop</h2>
+      <form id="registrationForm">
+        <label for="studentName">Full Name</label>
+        <input type="text" id="studentName" name="studentName" required>
+
+        <label for="studentEmail">Email Address</label>
+        <input type="email" id="studentEmail" name="studentEmail" required>
+
+        <label for="studentId">Student ID</label>
+        <input type="text" id="studentId" name="studentId" required>
+
+        <button type="button" onclick="showGreeting()">
+          Show Greeting
+        </button>
+      </form>
+      <p id="greetingMessage"></p>
+    </section>
+
+    <!-- Interaction 4 (independent improvement): Venue reminder -->
+    <section class="interaction-box">
+      <h2>Venue Reminder</h2>
+      <button type="button" onclick="showVenue()">
+        Show Venue Details
+      </button>
+      <p id="venueMessage">Venue details will appear here.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Southeast University &mdash; CSE472 Lab Project</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
