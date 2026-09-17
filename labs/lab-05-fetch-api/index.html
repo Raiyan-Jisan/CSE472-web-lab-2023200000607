@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Workshop Registration System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Student Workshop Registration System</h1>
+
+  <main>
+
+    <section class="card">
+      <h2>Workshop Details</h2>
+      <p>Click the button to load workshop information.</p>
+      <button type="button" onclick="loadWorkshop()">
+        Load Workshop Details
+      </button>
+      <p><strong>Title:</strong> <span id="workshopTitle">Not loaded</span></p>
+      <p><strong>Date:</strong> <span id="workshopDate">Not loaded</span></p>
+      <p><strong>Venue:</strong> <span id="workshopVenue">Not loaded</span></p>
+      <p><strong>Seats:</strong> <span id="workshopSeats">Not loaded</span></p>
+
+      <p><strong>Instructor:</strong> <span id="workshopInstructor">Not loaded</span></p>
+
+
+
+      <p id="loadMessage"></p>
+    </section>
+
+    <section class="card">
+      <h2>Public API Practice</h2>
+      <button type="button" onclick="loadSampleUser()">
+        Load Sample User
+      </button>
+      <p id="apiUser">No API data loaded yet.</p>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
